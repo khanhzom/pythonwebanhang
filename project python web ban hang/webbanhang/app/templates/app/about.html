@@ -1,0 +1,75 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block about %}
+<style>
+    .containerUs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .containerLeft {
+      flex: 1;
+      padding: 20px;
+    }
+  
+    .containerRight {
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  
+    .mapContainer {
+      width: 100%;
+      height: 450px;
+    }
+  
+    .formContainer {
+      width: 100%;
+    }
+  
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+  
+    input[type=submit] {
+      background-color: #5e6bdc;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+    
+    <div class="containerUs">
+    <div class="topUs">
+    </div>
+    <div class="containerLeft" style="padding: 20px;">
+      <img src="https://www.derewala.com/images/gold-silver.jpg" alt="jewelry">
+    </div>
+    <div class="containerRight">
+     <h2>
+      About our company
+     </h2>
+     <p>Hello! <br>
+      <p>Our company is one of the leading manufacturers and wholesale suppliers of gemstones in the market. With top-notch gemstone crafting expertise, we are committed to providing high-quality and affordable gemstone products.</p>
+      <p>We always search and select the best gemstone sources from all over the world, and use advanced technology to craft beautiful and unique gemstone products. Our professional staff has extensive experience and high skills in gemstone crafting, ensuring that the gemstone products are produced with the best quality and meet the strict requirements of customers.</p>
+      <p>We promise to provide gemstone products at the most affordable prices, bringing high profits for both sides. We understand that the price is an important factor in the buying decision of customers, and we always try to keep the prices as competitive as possible.</p>
+      <p>Thanks you!</p>
+    </div>
+    
+    </div>
+    </div>
+    {% endblock about %}
